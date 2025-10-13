@@ -8,8 +8,16 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+import { handleIndex, handlePrompt } from "./handlers"
+
 export default {
 	async fetch(request, env, ctx) {
-		return new Response('Hello World!');
+		const url = new URL(request.url)
+		switch (url.pathname) {
+			case "/":
+				return handleIndex(request, env)
+			case "/api/prompt":
+				return await handlePrompt(request, env)
+		}
 	},
-};
+}

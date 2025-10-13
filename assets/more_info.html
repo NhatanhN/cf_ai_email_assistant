@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>email helper</title>
+</head>
+
+<body>
+	<h1 id="title">AI email helper</h1>
+	<h3>Info page</h3>
+	<p>
+        The idea is that you hook up email functions to an AI and then you can ask it to do things for you.
+        It can do stuff like summarize emails, trash emails, label them (e.g. mark them as read, unread, spam, promotions, etc).
+    </p>
+    <br/>
+    <p>
+        I feel like from here the AI could probably get even more powerful if access to more behaviors (e.g. send messages, act autonomously
+        without explicitly needing to be prompted to do so.) or if I gave it the ability to work over more than one email at a time, or if 
+        I used a stronger LLM, but I suppose that's just all aspirations at the moment.
+    </p>
+    <br/>
+    <p>
+        Anyways this would better be served as like a prototype or something, not to be used seriously. I won't guarantee that it won't just
+        trash an email randomly (but only ever one at a time).
+    </p>
+    <p>
+        (or maybe 2 or 3 at at time).
+    </p>
+    <br/>
+    <p>Large Language Model Used: <a href="https://github.com/marketplace/models/azureml-meta/Llama-4-Scout-17B-16E-Instruct" target="_blank">llama-4-scout-17b-16e-instruct</a></p>
+    <h3>Links</h3>
+    <a href="/">Go back to home page</a> <br/>
+    <a>Link to code repository</a>
+</body>
+
+<style>
+	:root {
+		--dark-1: #0f0f0f;
+		--dark-2: #1b1b1b;
+		--dark-3: #2b2b2b;
+		--dark-4: #404040;
+		--light-1: #f4f4f4;
+		--light-2: #ededed;
+		--accent-1: #082363;
+		--accent-2: #fc3640;
+		--accent-3: #705e4d;
+		--accent-4: #1d7ca4;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		color: var(--light-1);
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+	body {
+		padding: 0 25vw;
+		background-color: var(--dark-1);
+	}
+
+	h2,
+	h3,
+	h4 {
+		margin: 30px 0 5px 0;
+	}
+
+	#title {
+		margin: 15vh 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media (max-width: 500px) {
+		body {
+			padding: 10px;
+		}
+	}
+</style>
+</html>
