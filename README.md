@@ -1,6 +1,6 @@
 # Description
 
-This application links an LLM to gmail apis functions to see what behaviors it could do. My google oauth client isn't verified to logging may seem suspicious...
+This application links an LLM to gmail apis functions to see what behaviors it could do. My google oauth client isn't verified so logging in may seem suspicious...
 
 Here's a link to its deployment:
 ([ai-email-helper](https://ai-email-helper.nathannguyen951.workers.dev/))
