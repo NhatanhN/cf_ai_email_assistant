@@ -22,7 +22,7 @@ async function handleIndex(request, env) {
 		code,
 		client_id: "316406263891-m2apfpg48uesj5cob12vdrfl8h4t81qm.apps.googleusercontent.com",
 		client_secret: env.OAUTH_CLIENT_SECRET,
-		redirect_uri: "http://127.0.0.1:8787",
+		redirect_uri: "https://ai-email-helper.nathannguyen951.workers.dev",
 		grant_type: "authorization_code",
 	})
 
