@@ -13,17 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Check token presence
-        run: |
-          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
-            echo "Token is EMPTY or not set"
-            exit 1
-          else
-            echo "Token is present and non-empty"
-          fi
       - uses: actions/checkout@v4
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4.42.1"
